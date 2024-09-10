@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(208, 207, 207);
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;  
+}
+nav img{
+    height: 70px;
+    width: 300px;
+}
+nav .nav-links{
+    flex: 1;
+    text-align: right;
+}
+nav .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+nav .nav-links ul li a{
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}
+nav .nav-links ul li a i{
+    padding-right: 5px;
+    color: lime;
+}
+nav .nav-links{
+    padding-right: 10px;
+}
+nav .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: grey;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+nav .nav-links ul li:hover::after{
+    width: 100%;
+}
+.slideshow {
+    height: 95vh;
+}
+.intro-section{
+    height: 95vh;
+    width: 100%;
+    background-image: url("./Images/pexels-pixabay-39284.jpg");
+    background-size: cover;
+}
+.intro-section .intro-section-overlay{
+    background: rgba(0, 0, 0, 0.604);
+    height: 95vh;
+    width: 100%;
+}
+.intro-section .intro-section-overlay .intro-text{
+    color: rgb(0, 183, 255);
+    padding-top: 220px;
+}
+.intro-section .intro-section-overlay .intro-text h1{
+    font-size: 80px;
+    color: rgb(0, 183, 255) ;
+}
+.intro-section .intro-section-overlay .intro-text span{
+    font-size: 20px;
+    color: LIME;
+}
+.what-I-offer center h1{
+    padding-top: 50px;
+    font-size: 50px;
+    color: rgb(0, 183, 255) ;
+}
+.what-I-offer center p{
+    padding-top: 8px;
+}
+.service-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px; 
+}
+.service-columns{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.service-columns .service h2{
+    padding: 10px;
+    color: rgb(0, 183, 255) ;
+}
+.service-columns .service img{
+    height: 100px;
+    width: 100px;
+}
+.About{
+    background: rgb(64, 63, 63);
+}
+.About center .About-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.About h1{
+    padding-top: 30px;
+    font-size: 50px;
+    color: rgb(0, 183, 255) ;
+}
+.About span{
+    color: whitesmoke;
+}
+.About P{
+    color: whitesmoke;
+}
+.About .About-content{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.About .About-content h2{
+    padding-bottom: 10px;
+    color: rgb(0, 183, 255);
+}
+.contact center h1{
+    padding-top: 40px;
+    font-size: 50px;
+    color: rgb(0, 183, 255) ;
+}
+.contact h2{
+    color: rgb(0, 183, 255) ;
+}
+.contact .fa{
+    color: lime;
+}
+.contact center p{
+    padding-bottom: 20px;
+}
+
+center .contact-content .contact-details span a{
+    text-decoration: none;
+}
+.contact-content .fa{
+    padding-right: 5px;
+}
+.contact-content h3{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: rgb(0, 183, 255) ;
+}
+.contact-content {
+    padding-bottom: 50px;
+}
+.contact{
+    background-image: url("./Images/pexels-mart-production-7255421.jpg");
+    background-size: cover;
+}
+.contact img{
+    height: 100px;
+    width: 100px;
+}
+.contact .contact-overlay{
+    background: rgba(0, 0, 0, 0.529);
+}
+.footer{
+    background: black;
+    color:rgb(0, 183, 255) ;
+}
+.footer center h3{
+    background: black;
+    color:rgb(0, 183, 255);
+    font-size: 40px;
+    padding-top: 50px;
+}
+.footer center h3{
+    padding-top: 40px;
+}
+.footer span{
+    color:whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer img{
+    height: 100px;
+    width: 200px;
+}
+.footer center h2{
+    padding-bottom: 5px;
+}
+.footer center span{
+    padding-bottom: 5px;
+}
+.contact .socials{
+    width: 40px;
+    height: 40px;
+}
+.footer .socials{
+    width: 40px;
+    height: 40px; 
+}
+
+/* Style the navbar 
+nav{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }*/
+  
+nav #mobile-icon {
+    color: rgb(0, 183, 255);
+    display: none;
+}
+
+ @media(width: 320px){
+    nav img{
+        width: 20px;
+    }
+ }
+
+ /* mobile adjustments*/
+ @media(max-width: 700px){
+    nav img{
+        width: 120px;
+    }
+    nav .nav-links ul li{
+        display: block;
+    }
+    nav .nav-links{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.688);
+        height: 109vh;
+        width: 10s0px;
+        top: 0;
+        right: -175px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav #mobile-icon{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .intro-section .intro-section-overlay .intro-text h1{
+        font-size: 50px;
+    }
+    .service-columns{
+        grid-template-columns: 1fr;
+    }
+    .About center .About-content{
+        grid-template-columns: 1fr;
+    }
+
+ }
+ @media(max-width:992px){
+    nav img{
+        width: 120px;
+    }
+    nav .nav-links ul li{
+        display: block;
+    }
+    nav .nav-links{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.688);
+        height: 109vh;
+        width: 10s0px;
+        top: 0;
+        right: -175px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav #mobile-icon{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .intro-section .intro-section-overlay .intro-text h1{
+        font-size: 50px;
+    }
+    .service-columns{
+        grid-template-columns: 1fr;
+    }
+    .About center .About-content{
+        grid-template-columns: 1fr;
+    }
+ }
